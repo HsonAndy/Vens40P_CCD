@@ -342,5 +342,6 @@ namespace 文信40PIN_CCD
             h_Canvas_Tech_CCD01_01_拼接圖2.RefreshCanvas();
         }
 
+
     }
 }
