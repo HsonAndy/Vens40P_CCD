@@ -1417,6 +1417,67 @@
         RU5ErkJggg==
 </value>
   </data>
+  <data name="plC_Button6.狀態OFF圖片" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
+        dAAAEnQB3mYfeAAABeNJREFUaEPtmk1IVF8YxsePtDJISVNSUULRWtgiXSUEUUm4EAUVNMGFq1yIG3ci
+        UYRJLUpaBC00hUhCSRF0p0ILFUFRUVBDBD8oFYRQ8ev98xzvOHrnceZ++SfNB34wnPt+emfOPeceXfKP
+        6bzhs67zhs+6zhu2q8nJSenr65Pe3l7bTE1NaVGdk2MNb25uyrt37+TevXuSnJwsSUlJtrl//76KidhO
+        ybGGv337JgEBAeJyuRwHsZ2SIw2vra1JamoqLdYJEBs5nJAjDb99+5YW6iTI4YRsN7y8vCxBQUG0SCdB
+        DuSyK9sNl5WV0QJPAuSyK0MNr6+vq0fExMSEeuyA6elp9fhhhZ0kyInc7jpQE2ozOpMf2/DY2Jg8ffpU
+        Ll++TBP/jYSHh0t5ebnMz89rXXjLq2H8tTIyMmjA00ReXp6srKxoXXl0pOG2tjbqfFq5ceOGDAwMaN3t
+        66Dhzs5O6hQaGiphYWH0mhUw2164cEHxf8zuFy9elMHBQa1LreG5uTlVgN44LS1N3r9/r1Y6RUVFyllv
+        449Lly5JfHy83L17V/Lz86Wqqkpqa2sV+IwxXIMNbFkMu2Cp6/56q4YLCgq8jFJSUqS/v18ZuYWm9XbH
+        ERERIQ8ePJA3b96omdSfYANb+MCXxbRDZWWlyuNC58yguLhYdnd3lZFbuNNXrlyh9m6Cg4MlKytLmpqa
+        ZGtrS/M0Lvg0NzfLo0ePJDAwkOawyp8/f8RVX19PLz558sRrlsPXG79pZg9wZ2pqauT379+ah3UtLi5K
+        dXW1o3f748eP4nr8+DG9iGfa8+fPVdM7Ozvq643fNLMFsbGx6s44rc+fP6vYLKdZHj58KK7r16/TiwBN
+        407jt+trNwS779+/ayVyjY6Oqq/5ixcv5NmzZwp8xhiu+RJiIwfLbQb1bXFiD9vQ0KCV5q0fP36oNfCd
+        O3fk2rVrXr4YwzXYwPY4IYfe1yJ00DClpaVaSUeFCQK/58TEROrHgC184MuEXMzPJHTQEFiQbG9va+V4
+        hEnLzi4KvmziQy4HFkF00BAfPnzQSvFoY2NDLSiYvRkQA7H0Qk5mbwI6aAimr1+/UlsrIBYTszUBHfRL
+        YWGhlt4j7FPT09OpvRUQCzH1Qm5mbxA66Jeenh4tvUctLS3U1g6IqRdyM1uD0EG/6LW6uiolJSXU1g6I
+        idh6MVuD0EGfYNek1+zsrNy6dYva2wExEVsvKzs3DTrok9u3b2tpPcL7pZN4HYSYiK0XamD2BqCDPsHW
+        Ua/x8XFq6wSIrRdqYLYGoIM+wbpaL+xnQ0JCqL0dEJPtp22cdNBBn0RGRmppPfr586epZaRREBOx9UIN
+        zN4AdNAvemEpmJubS23tgJhsmclsDUIH/TI8PKyl3tfe3t7+BpvY2gExEfuwkJvZGoQO+qWiokJL79HI
+        yIgkJCRQeysgFmLqhdzM3iB00C+YTPTCnXj9+jW1twJi6e8uZHNypIOG6O7u1krwaGlpSb31Z/ZmQAzE
+        0gs5mb0J6KAh8C6ZCQuFzMxM6mME+LLFBoSczMcEdNAwr1690ko5ql+/flm60/CBLxNyMR+T0EFTsInF
+        rdbWVomOjqZ+h4ENbI8TcjA/0/h6z2wUvA3EcY0vYV+Lt5TZ2dnqpR3AZ4yxPe9hIbYT76dVrzjXYRfN
+        cvPmzWN/d3aEmIjNcppF9VpXV0cvWiEuLk66urroo8SsEAOxEJPlsoLqFafl7KJVcASKF3AzMzPqxMKs
+        4ANfxHD6OFX1iiQ5OTnUwA5YJWHhgCOahYUFn83jGmxgCx8nV2tu0COkGsakcfXqVWpoF8RFspcvX8qX
+        L1+kvb394H8p8RljuAabk6zBPTEebHtwaMUOxU8CPIKMPKqcAD2hN7eO7PNwdBoTE0MdTyPoBT0dltfG
+        tqOjQx1GswCnCfSAXvTyahjCg/7Tp09q8x0VFUUD/o2gVtSM2o9bCNGG3cIp/NDQkNqh4LC7sbHxrwS1
+        oUbUipp9yWfDZ1HnDZ91/WMNi/wHm2B3fLKaTwoAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="plC_Button6.狀態ON圖片" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
   <data name="plC_Button_Main_CCD01_01_ZOOM更新.狀態OFF圖片" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcI

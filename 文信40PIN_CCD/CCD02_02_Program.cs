@@ -3828,7 +3828,8 @@ namespace 文信40PIN_CCD
                     PLC_Device_CCD02_02_校正量測框_拼圖1校正座標4_X.Value = PLC_Device_CCD02_02_校正量測框_拼圖1座標X.Value;
                     PLC_Device_CCD02_02_校正量測框_拼圖1校正座標4_Y.Value = PLC_Device_CCD02_02_校正量測框_拼圖1座標Y.Value;
                     CCD02_02_接圖1拼接順序 = 0;
-                    MessageBox.Show("拼圖1校正點輸入完成", "訊息", MessageBoxButtons.OK,MessageBoxIcon.Information,MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                    MyMessageBox.ShowDialog("拼圖1校正點輸入完成", "訊息", MyMessageBox.enum_BoxType.Asterisk, MyMessageBox.enum_Button.Confirm);
+                    //MessageBox.Show("拼圖1校正點輸入完成", "訊息", MessageBoxButtons.OK,MessageBoxIcon.Information,MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 }
             }
         }
@@ -3859,7 +3860,8 @@ namespace 文信40PIN_CCD
                     PLC_Device_CCD02_02_校正量測框_拼圖2校正座標4_X.Value = PLC_Device_CCD02_02_校正量測框_拼圖2座標X.Value;
                     PLC_Device_CCD02_02_校正量測框_拼圖2校正座標4_Y.Value = PLC_Device_CCD02_02_校正量測框_拼圖2座標Y.Value;
                     CCD02_02_接圖2拼接順序 = 0;
-                    MessageBox.Show("拼圖2校正點輸入完成", "訊息", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                    MyMessageBox.ShowDialog("拼圖2校正點輸入完成", "訊息", MyMessageBox.enum_BoxType.Asterisk, MyMessageBox.enum_Button.Confirm);
+                    //MessageBox.Show("拼圖2校正點輸入完成", "訊息", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 }
             }
 

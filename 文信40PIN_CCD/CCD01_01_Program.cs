@@ -25,6 +25,7 @@ namespace 文信40PIN_CCD
             this.sub_Program_CCD01_01_SNAP_拼接圖1();
             this.sub_Program_CCD01_01_SNAP_拼接圖2();
             this.sub_Program_CCD01_01_Main_取像並檢驗();
+            this.sub_Program_CCD01_01_Main_取像拼接();
             this.sub_Program_CCD01_01_Tech_檢驗一次();
             this.sub_Program_CCD01_01_計算一次();
             this.sub_Program_CCD01_01_拼接校正();
@@ -279,7 +280,7 @@ namespace 文信40PIN_CCD
             {
                 if (cnt_Program_CCD01_01_拼接校正 == 65534)
                 {
-                    this.CCD01_01_AxImageSewer.LoadFile(@"C:\Users\Administrator\Desktop\Vens40P_CCD\Imagesewer_File\CCD01_01_Calibrate.cb");
+                    this.CCD01_01_AxImageSewer.LoadFile(@"C:\Users\aaa\Desktop\文信40PIN_CCD\Imagesewer_File\CCD01_01_Calibrate.cb");
                     h_Canvas_Tech_CCD01_01_拼接完成圖.OnCanvasDrawEvent += H_Canvas_Tech_CCD01_01_拼接校正_OnCanvasDrawEvent;
                     #region 拼圖座標
                     CCD01_01拼圖1_X1 = PLC_Device_CCD01_01_校正量測框_拼圖1校正座標1_X.Value / 1000D;
@@ -871,7 +872,7 @@ namespace 文信40PIN_CCD
         }
         void cnt_Program_CCD01_01_Main_取像並檢驗_結束SNAP(ref int cnt)
         {
-            this.h_Canvas_Main_CCD01_01_檢測畫面.ImageCopy(h_Canvas_Tech_CCD01_01_拼接完成圖.VegaHandle);
+           // this.h_Canvas_Main_CCD01_01_檢測畫面.ImageCopy(h_Canvas_Tech_CCD01_01_拼接完成圖.VegaHandle);
             cnt++;
             
         }
@@ -905,6 +906,134 @@ namespace 文信40PIN_CCD
         }
 
 
+
+
+
+        #endregion
+        #region PLC_CCD01_01_Main_取像拼接
+        PLC_Device PLC_Device_CCD01_01_Main_取像拼接 = new PLC_Device("S38000");
+        PLC_Device PLC_Device_CCD01_01_觸發PLC步進移動 = new PLC_Device("S38010");
+        PLC_Device PLC_Device_CCD01_01_觸發PLC步進移動完成 = new PLC_Device("S38011");
+        int cnt_Program_CCD01_01_Main_取像拼接 = 65534;
+        void sub_Program_CCD01_01_Main_取像拼接()
+        {
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 65534)
+            {
+                PLC_Device_CCD01_01_Main_取像拼接.SetComment("PLC_CCD01_01_Main_取像拼接");
+                PLC_Device_CCD01_01_Main_取像拼接.Bool = false;
+
+            }
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 65535) cnt_Program_CCD01_01_Main_取像拼接 = 1;
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 1) cnt_Program_CCD01_01_Main_取像拼接_檢查按下(ref cnt_Program_CCD01_01_Main_取像拼接);
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 2) cnt_Program_CCD01_01_Main_取像拼接_初始化(ref cnt_Program_CCD01_01_Main_取像拼接);
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 3) cnt_Program_CCD01_01_Main_取像拼接_拼接1開始SNAP(ref cnt_Program_CCD01_01_Main_取像拼接);
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 4) cnt_Program_CCD01_01_Main_取像拼接_拼接1結束SNAP(ref cnt_Program_CCD01_01_Main_取像拼接);
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 5) cnt_Program_CCD01_01_Main_取像拼接_步進到第二張位置開始(ref cnt_Program_CCD01_01_Main_取像拼接);
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 6) cnt_Program_CCD01_01_Main_取像拼接_步進到第二張位置結束(ref cnt_Program_CCD01_01_Main_取像拼接);
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 7) cnt_Program_CCD01_01_Main_取像拼接_拼接2開始SNAP(ref cnt_Program_CCD01_01_Main_取像拼接);
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 8) cnt_Program_CCD01_01_Main_取像拼接_拼接2結束SNAP(ref cnt_Program_CCD01_01_Main_取像拼接);
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 9) cnt_Program_CCD01_01_Main_取像拼接_影像拼接開始(ref cnt_Program_CCD01_01_Main_取像拼接);
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 10) cnt_Program_CCD01_01_Main_取像拼接_影像拼接結束(ref cnt_Program_CCD01_01_Main_取像拼接);
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 11) cnt_Program_CCD01_01_Main_取像拼接_繪製畫布(ref cnt_Program_CCD01_01_Main_取像拼接);
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 12) cnt_Program_CCD01_01_Main_取像拼接 = 65500;
+            if (cnt_Program_CCD01_01_Main_取像拼接 > 1) cnt_Program_CCD01_01_Main_取像拼接_檢查放開(ref cnt_Program_CCD01_01_Main_取像拼接);
+
+            if (cnt_Program_CCD01_01_Main_取像拼接 == 65500)
+            {
+                PLC_Device_CCD01_01_Main_取像拼接.Bool = false;
+                cnt_Program_CCD01_01_Main_取像拼接 = 65535;
+            }
+        }
+        void cnt_Program_CCD01_01_Main_取像拼接_檢查按下(ref int cnt)
+        {
+            if (PLC_Device_CCD01_01_Main_取像拼接.Bool) cnt++;
+        }
+        void cnt_Program_CCD01_01_Main_取像拼接_檢查放開(ref int cnt)
+        {
+            if (!PLC_Device_CCD01_01_Main_取像拼接.Bool) cnt = 65500;
+        }
+        void cnt_Program_CCD01_01_Main_取像拼接_初始化(ref int cnt)
+        {
+            cnt++;
+        }
+        void cnt_Program_CCD01_01_Main_取像拼接_拼接1開始SNAP(ref int cnt)
+        {
+            if (!PLC_Device_CCD01_01_SNAP_拼接圖1.Bool)
+            {
+
+                PLC_Device_CCD01_01_SNAP_拼接圖1.Bool = true;
+                cnt++;
+            }
+
+        }
+        void cnt_Program_CCD01_01_Main_取像拼接_拼接1結束SNAP(ref int cnt)
+        {
+            if (!PLC_Device_CCD01_01_SNAP_拼接圖1.Bool)
+            {
+                cnt++;
+            }
+
+        }
+        void cnt_Program_CCD01_01_Main_取像拼接_步進到第二張位置開始(ref int cnt)
+        {
+            //if (!PLC_Device_CCD01_01_觸發PLC步進移動.Bool)
+            //{
+
+            //    PLC_Device_CCD01_01_觸發PLC步進移動.Bool = true;
+            //    cnt++;
+            //}
+            cnt++;
+        }
+        void cnt_Program_CCD01_01_Main_取像拼接_步進到第二張位置結束(ref int cnt)
+        {
+            //if (!PLC_Device_CCD01_01_觸發PLC步進移動.Bool && PLC_Device_CCD01_01_觸發PLC步進移動完成.Bool)
+            //{
+            //    cnt++;
+            //}
+            cnt++;
+        }
+        void cnt_Program_CCD01_01_Main_取像拼接_拼接2開始SNAP(ref int cnt)
+        {
+            if (!PLC_Device_CCD01_01_SNAP_拼接圖2.Bool)
+            {
+
+                PLC_Device_CCD01_01_SNAP_拼接圖2.Bool = true;
+                cnt++;
+            }
+
+        }
+        void cnt_Program_CCD01_01_Main_取像拼接_拼接2結束SNAP(ref int cnt)
+        {
+            if (!PLC_Device_CCD01_01_SNAP_拼接圖2.Bool)
+            {
+                cnt++;
+            }
+
+        }
+        void cnt_Program_CCD01_01_Main_取像拼接_影像拼接開始(ref int cnt)
+        {
+            if (!this.PLC_Device_CCD01_01_影像拼接.Bool)
+            {
+                this.PLC_Device_CCD01_01_影像拼接.Bool = true;
+                cnt++;
+            }
+        }
+        void cnt_Program_CCD01_01_Main_取像拼接_影像拼接結束(ref int cnt)
+        {
+            if (!this.PLC_Device_CCD01_01_影像拼接.Bool)
+            {
+                this.h_Canvas_Main_CCD01_01_檢測畫面.ImageCopy(h_Canvas_Tech_CCD01_01_拼接完成圖.VegaHandle);
+                cnt++;
+            }
+        }
+        void cnt_Program_CCD01_01_Main_取像拼接_繪製畫布(ref int cnt)
+        {
+            if (CCD01_01_SrcImageHandle_拼接完成圖 != 0)
+            {
+                this.h_Canvas_Main_CCD01_01_檢測畫面.RefreshCanvas();
+            }
+            cnt++;
+        }
 
 
 
@@ -2519,14 +2648,14 @@ namespace 文信40PIN_CCD
         {
             if (openFileDialog_拼接校正檔.ShowDialog() == DialogResult.OK)
             {
-                this.CCD01_01_AxImageSewer.LoadFile(@"C:\Users\Administrator\Desktop\Vens40P_CCD\Imagesewer_File\CCD01_01_Calibrate.cb");
+                this.CCD01_01_AxImageSewer.LoadFile(@"C:\Users\aaa\Desktop\文信40PIN_CCD\Imagesewer_File\CCD01_01_Calibrate.cb");
             }
         }
         int CCD01_01接圖1拼接順序 = 0;
         int CCD01_01接圖2拼接順序 = 0;
         private void plC_Button_CCD01_01拼圖1校正SET_btnClick(object sender, EventArgs e)
         {
-            if (PLC_Device_CCD01_01_校正量測框調整.Bool)
+            if (PLC_Device_CCD01_01_校正量測框調整.Bool || !PLC_Device_CCD01_01_校正量測框調整.Bool)
             {
                 if (CCD01_01接圖1拼接順序 == 0)
                 {
@@ -2551,7 +2680,8 @@ namespace 文信40PIN_CCD
                     PLC_Device_CCD01_01_校正量測框_拼圖1校正座標4_X.Value = PLC_Device_CCD01_01_校正量測框_拼圖1座標X.Value;
                     PLC_Device_CCD01_01_校正量測框_拼圖1校正座標4_Y.Value = PLC_Device_CCD01_01_校正量測框_拼圖1座標Y.Value;
                     CCD01_01接圖1拼接順序 = 0;
-                    MessageBox.Show("拼圖1校正點輸入完成", "訊息", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                    MyMessageBox.ShowDialog("拼圖1校正點輸入完成", "訊息", MyMessageBox.enum_BoxType.Asterisk, MyMessageBox.enum_Button.Confirm);
+                   // MessageBox.Show("拼圖1校正點輸入完成", "訊息", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 }
             }
         }
@@ -2582,7 +2712,8 @@ namespace 文信40PIN_CCD
                     PLC_Device_CCD01_01_校正量測框_拼圖2校正座標4_X.Value = PLC_Device_CCD01_01_校正量測框_拼圖2座標X.Value;
                     PLC_Device_CCD01_01_校正量測框_拼圖2校正座標4_Y.Value = PLC_Device_CCD01_01_校正量測框_拼圖2座標Y.Value;
                     CCD01_01接圖2拼接順序 = 0;
-                    MessageBox.Show("拼圖2校正點輸入完成", "訊息", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                    MyMessageBox.ShowDialog("拼圖2校正點輸入完成", "訊息", MyMessageBox.enum_BoxType.Asterisk, MyMessageBox.enum_Button.Confirm);
+                    //MessageBox.Show("拼圖2校正點輸入完成", "訊息", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 }
             }
 

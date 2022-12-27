@@ -35,8 +35,6 @@
             this.openImageDialog = new System.Windows.Forms.OpenFileDialog();
             this.plC_MindVision_Camera_UI1 = new MVSDKUI.PLC_MindVision_Camera_UI();
             this.panel_Main = new System.Windows.Forms.Panel();
-            this.saveFileDialog_拼接校正檔 = new System.Windows.Forms.SaveFileDialog();
-            this.openFileDialog_拼接校正檔 = new System.Windows.Forms.OpenFileDialog();
             this.plC_RJ_ScreenButton_退出程式 = new MyUI.PLC_RJ_ScreenButton();
             this.plC_RJ_ScreenButton_交握 = new MyUI.PLC_RJ_ScreenButton();
             this.plC_RJ_ScreenButton_系統 = new MyUI.PLC_RJ_ScreenButton();
@@ -44,6 +42,8 @@
             this.plC_RJ_ScreenButton_CCD2 = new MyUI.PLC_RJ_ScreenButton();
             this.plC_RJ_ScreenButton_CCD1 = new MyUI.PLC_RJ_ScreenButton();
             this.plC_RJ_ScreenButton_主畫面 = new MyUI.PLC_RJ_ScreenButton();
+            this.saveFileDialog_拼接校正檔 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog_拼接校正檔 = new System.Windows.Forms.OpenFileDialog();
             this.plC_ScreenPage_Main = new MyUI.PLC_ScreenPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -910,6 +910,7 @@
             this.rJ_TextBox_PLC資料交握參數_參數名稱 = new MyUI.RJ_TextBox();
             this.rJ_Lable32 = new MyUI.RJ_Lable();
             this.sqL_DataGridView_PLC資料交握參數 = new SQLUI.SQL_DataGridView();
+            this.plC_Button6 = new MyUI.PLC_Button();
             this.panel_Main.SuspendLayout();
             this.plC_ScreenPage_Main.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -1115,19 +1116,10 @@
             this.panel_Main.Controls.Add(this.plC_RJ_ScreenButton_CCD1);
             this.panel_Main.Controls.Add(this.plC_RJ_ScreenButton_主畫面);
             this.panel_Main.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel_Main.Location = new System.Drawing.Point(1752, 0);
+            this.panel_Main.Location = new System.Drawing.Point(1751, 0);
             this.panel_Main.Name = "panel_Main";
             this.panel_Main.Size = new System.Drawing.Size(156, 1044);
             this.panel_Main.TabIndex = 1;
-            // 
-            // saveFileDialog_拼接校正檔
-            // 
-            this.saveFileDialog_拼接校正檔.Filter = "cb File (*cb)|*cb;";
-            // 
-            // openFileDialog_拼接校正檔
-            // 
-            this.openFileDialog_拼接校正檔.FileName = "openFileDialog1";
-            this.openFileDialog_拼接校正檔.Filter = "cb File (*cb)|*cb;";
             // 
             // plC_RJ_ScreenButton_退出程式
             // 
@@ -1401,6 +1393,15 @@
             this.plC_RJ_ScreenButton_主畫面.顯示方式 = MyUI.PLC_RJ_ScreenButton.StateEnum.正常顯示;
             this.plC_RJ_ScreenButton_主畫面.顯示狀態 = false;
             this.plC_RJ_ScreenButton_主畫面.顯示讀取位置 = "";
+            // 
+            // saveFileDialog_拼接校正檔
+            // 
+            this.saveFileDialog_拼接校正檔.Filter = "cb File (*cb)|*cb;";
+            // 
+            // openFileDialog_拼接校正檔
+            // 
+            this.openFileDialog_拼接校正檔.FileName = "openFileDialog1";
+            this.openFileDialog_拼接校正檔.Filter = "cb File (*cb)|*cb;";
             // 
             // plC_ScreenPage_Main
             // 
@@ -2566,6 +2567,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.plC_Button6);
             this.groupBox1.Controls.Add(this.panel6);
             this.groupBox1.Controls.Add(this.plC_Button45);
             this.groupBox1.Controls.Add(this.plC_RJ_Button_Main_CCD01_01讀取圖片);
@@ -2946,7 +2948,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(483, 381);
+            this.tabPage2.Size = new System.Drawing.Size(1743, 1015);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "CCD1";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -2959,7 +2961,7 @@
             this.tabControl2.Location = new System.Drawing.Point(3, 3);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(475, 373);
+            this.tabControl2.Size = new System.Drawing.Size(1735, 1007);
             this.tabControl2.TabIndex = 6;
             // 
             // tabPage7
@@ -2975,7 +2977,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(467, 347);
+            this.tabPage7.Size = new System.Drawing.Size(1727, 981);
             this.tabPage7.TabIndex = 0;
             this.tabPage7.Text = "CCD1-1";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -11638,7 +11640,7 @@
             this.tabPage16.Controls.Add(this.tabControl4);
             this.tabPage16.Location = new System.Drawing.Point(4, 25);
             this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Size = new System.Drawing.Size(483, 381);
+            this.tabPage16.Size = new System.Drawing.Size(1743, 1015);
             this.tabPage16.TabIndex = 4;
             this.tabPage16.Text = "CCD2";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -11651,7 +11653,7 @@
             this.tabControl4.Location = new System.Drawing.Point(0, 0);
             this.tabControl4.Name = "tabControl4";
             this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(483, 381);
+            this.tabControl4.Size = new System.Drawing.Size(1743, 1015);
             this.tabControl4.TabIndex = 7;
             // 
             // tabPage17
@@ -11667,7 +11669,7 @@
             this.tabPage17.Location = new System.Drawing.Point(4, 22);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage17.Size = new System.Drawing.Size(475, 355);
+            this.tabPage17.Size = new System.Drawing.Size(1735, 989);
             this.tabPage17.TabIndex = 0;
             this.tabPage17.Text = "CCD2-1";
             this.tabPage17.UseVisualStyleBackColor = true;
@@ -20144,6 +20146,38 @@
             this.sqL_DataGridView_PLC資料交握參數.首列樣式 = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
             this.sqL_DataGridView_PLC資料交握參數.首行樣式 = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
             // 
+            // plC_Button6
+            // 
+            this.plC_Button6.Bool = false;
+            this.plC_Button6.but_press = false;
+            this.plC_Button6.Icon = System.Windows.Forms.MessageBoxIcon.Warning;
+            this.plC_Button6.Location = new System.Drawing.Point(591, 213);
+            this.plC_Button6.Name = "plC_Button6";
+            this.plC_Button6.OFF_文字字體 = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.plC_Button6.OFF_文字顏色 = System.Drawing.Color.Black;
+            this.plC_Button6.OFF_背景顏色 = System.Drawing.SystemColors.Control;
+            this.plC_Button6.ON_文字字體 = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.plC_Button6.ON_文字顏色 = System.Drawing.Color.White;
+            this.plC_Button6.ON_背景顏色 = System.Drawing.SystemColors.Control;
+            this.plC_Button6.Size = new System.Drawing.Size(65, 60);
+            this.plC_Button6.Style = MyUI.PLC_Button.StyleEnum.自定義;
+            this.plC_Button6.TabIndex = 19;
+            this.plC_Button6.事件驅動 = false;
+            this.plC_Button6.字型鎖住 = false;
+            this.plC_Button6.寫入元件位置 = "S38000";
+            this.plC_Button6.按鈕型態 = MyUI.PLC_Button.StatusEnum.交替型;
+            this.plC_Button6.按鍵方式 = MyUI.PLC_Button.PressEnum.Mouse_左鍵;
+            this.plC_Button6.文字鎖住 = false;
+            this.plC_Button6.狀態OFF圖片 = ((System.Drawing.Image)(resources.GetObject("plC_Button6.狀態OFF圖片")));
+            this.plC_Button6.狀態ON圖片 = ((System.Drawing.Image)(resources.GetObject("plC_Button6.狀態ON圖片")));
+            this.plC_Button6.讀取位元反向 = false;
+            this.plC_Button6.讀取元件位置 = "S38000";
+            this.plC_Button6.讀寫鎖住 = false;
+            this.plC_Button6.起始狀態 = false;
+            this.plC_Button6.音效 = true;
+            this.plC_Button6.顯示 = false;
+            this.plC_Button6.顯示狀態 = false;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -21213,6 +21247,7 @@
         private MyUI.PLC_RJ_Button plC_RJ_Button_CCD01_01_拼接圖2_讀取圖片;
         private MyUI.PLC_RJ_Button plC_RJ_Button_CCD01_01_拼接圖2_儲存圖片;
         private MyUI.PLC_Button plC_Button35;
+        private MyUI.PLC_Button plC_Button6;
     }
 }
 
