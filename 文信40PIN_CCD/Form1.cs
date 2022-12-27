@@ -107,7 +107,6 @@ namespace 文信40PIN_CCD
         {
 
             MyMessageBox.form = this.FindForm();
-
             this.MyThread_Canvas = new MyThread(this.FindForm());
 
             this.MyThread_Canvas.Add_Method(this.h_Canvas_Tech_CCD01_01_拼接圖1.Get_Method());
@@ -149,10 +148,8 @@ namespace 文信40PIN_CCD
             this.connentionClass.IP = "127.0.0.1";
             this.connentionClass.MySqlSslMode = MySql.Data.MySqlClient.MySqlSslMode.None;
             this.Program_PLC資料交握參數_Init();
-
-
             PLC_UI_Init.Set_PLC_ScreenPage(panel_Main, this.plC_ScreenPage_Main);
-
+            Basic.Screen.FullScreen(FindForm(), 0, true);
             this.WindowState = FormWindowState.Maximized;
         }
 

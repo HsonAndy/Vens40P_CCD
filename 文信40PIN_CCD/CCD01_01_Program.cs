@@ -806,6 +806,7 @@ namespace 文信40PIN_CCD
         #region PLC_CCD01_01_Main_取像並檢驗
         PLC_Device PLC_Device_CCD01_01_Main_取像並檢驗 = new PLC_Device("S39900");
         PLC_Device PLC_Device_CCD01_01_PLC觸發檢測 = new PLC_Device("S39700");
+        PLC_Device PLC_Device_CCD01_01_PLC觸發檢測完成 = new PLC_Device("S39701");
         MyTimer CCD01_01_Init_Timer = new MyTimer();
         int cnt_Program_CCD01_01_Main_取像並檢驗 = 65534;
         void sub_Program_CCD01_01_Main_取像並檢驗()
@@ -833,6 +834,7 @@ namespace 文信40PIN_CCD
             {
                 PLC_Device_CCD01_01_Main_取像並檢驗.Bool = false;
                 PLC_Device_CCD01_01_PLC觸發檢測.Bool = false;
+                PLC_Device_CCD01_01_PLC觸發檢測完成.Bool = false;
                 cnt_Program_CCD01_01_Main_取像並檢驗 = 65535;
             }
         }
@@ -847,7 +849,7 @@ namespace 文信40PIN_CCD
 
             else if (PLC_Device_CCD01_01_PLC觸發檢測.Bool)
             {
-
+                PLC_Device_CCD01_01_Main_取像並檢驗.Bool = true;
                 cnt++;
             }
 
@@ -893,6 +895,7 @@ namespace 文信40PIN_CCD
             if (CCD01_01_SrcImageHandle_拼接完成圖 != 0)
             {
                 this.h_Canvas_Main_CCD01_01_檢測畫面.RefreshCanvas();
+                PLC_Device_CCD01_01_PLC觸發檢測完成.Bool = true;
             }
             cnt++;
         }

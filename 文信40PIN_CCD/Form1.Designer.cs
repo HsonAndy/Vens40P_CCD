@@ -237,7 +237,7 @@
             this.plC_NumBox55 = new MyUI.PLC_NumBox();
             this.rJ_Lable64 = new MyUI.RJ_Lable();
             this.plC_NumBox56 = new MyUI.PLC_NumBox();
-            this.plC_Button6 = new MyUI.PLC_Button();
+            this.plC_Button_CCD01_01基準圓量測框 = new MyUI.PLC_Button();
             this.rJ_Lable62 = new MyUI.RJ_Lable();
             this.rJ_Pannel20 = new MyUI.RJ_Pannel();
             this.plC_NumBox51 = new MyUI.PLC_NumBox();
@@ -1094,7 +1094,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1743, 1015);
+            this.tabPage1.Size = new System.Drawing.Size(1743, 1032);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "主畫面";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -3191,6 +3191,7 @@
             this.rJ_GroupBox1.ContentsPanel.Controls.Add(this.tabControl1);
             this.rJ_GroupBox1.ContentsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rJ_GroupBox1.ContentsPanel.ForeColor = System.Drawing.Color.White;
+            this.rJ_GroupBox1.ContentsPanel.IsSelected = false;
             this.rJ_GroupBox1.ContentsPanel.Location = new System.Drawing.Point(0, 37);
             this.rJ_GroupBox1.ContentsPanel.Name = "ContentsPanel";
             this.rJ_GroupBox1.ContentsPanel.Size = new System.Drawing.Size(798, 838);
@@ -4957,6 +4958,7 @@
             this.rJ_Pannel334.Controls.Add(this.rJ_Pannel341);
             this.rJ_Pannel334.Controls.Add(this.rJ_Pannel342);
             this.rJ_Pannel334.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel334.IsSelected = false;
             this.rJ_Pannel334.Location = new System.Drawing.Point(6, 3);
             this.rJ_Pannel334.Name = "rJ_Pannel334";
             this.rJ_Pannel334.Size = new System.Drawing.Size(770, 458);
@@ -4971,6 +4973,7 @@
             this.rJ_Pannel335.Controls.Add(this.rJ_Lable410);
             this.rJ_Pannel335.Controls.Add(this.plC_NumBox884);
             this.rJ_Pannel335.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel335.IsSelected = false;
             this.rJ_Pannel335.Location = new System.Drawing.Point(44, 320);
             this.rJ_Pannel335.Name = "rJ_Pannel335";
             this.rJ_Pannel335.Size = new System.Drawing.Size(289, 53);
@@ -5082,6 +5085,7 @@
             this.rJ_Pannel336.Controls.Add(this.plC_RJ_ComboBox4);
             this.rJ_Pannel336.Controls.Add(this.rJ_Lable411);
             this.rJ_Pannel336.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel336.IsSelected = false;
             this.rJ_Pannel336.Location = new System.Drawing.Point(44, 243);
             this.rJ_Pannel336.Name = "rJ_Pannel336";
             this.rJ_Pannel336.Size = new System.Drawing.Size(401, 53);
@@ -5192,6 +5196,7 @@
             this.rJ_Pannel337.Controls.Add(this.rJ_Lable413);
             this.rJ_Pannel337.Controls.Add(this.plC_NumBox885);
             this.rJ_Pannel337.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel337.IsSelected = false;
             this.rJ_Pannel337.Location = new System.Drawing.Point(339, 188);
             this.rJ_Pannel337.Name = "rJ_Pannel337";
             this.rJ_Pannel337.Size = new System.Drawing.Size(289, 53);
@@ -5245,6 +5250,7 @@
             this.rJ_Pannel338.Controls.Add(this.rJ_Lable414);
             this.rJ_Pannel338.Controls.Add(this.plC_NumBox886);
             this.rJ_Pannel338.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel338.IsSelected = false;
             this.rJ_Pannel338.Location = new System.Drawing.Point(339, 133);
             this.rJ_Pannel338.Name = "rJ_Pannel338";
             this.rJ_Pannel338.Size = new System.Drawing.Size(289, 53);
@@ -5298,6 +5304,7 @@
             this.rJ_Pannel339.Controls.Add(this.rJ_Lable415);
             this.rJ_Pannel339.Controls.Add(this.plC_NumBox887);
             this.rJ_Pannel339.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel339.IsSelected = false;
             this.rJ_Pannel339.Location = new System.Drawing.Point(339, 78);
             this.rJ_Pannel339.Name = "rJ_Pannel339";
             this.rJ_Pannel339.Size = new System.Drawing.Size(289, 53);
@@ -5351,6 +5358,7 @@
             this.rJ_Pannel340.Controls.Add(this.rJ_Lable416);
             this.rJ_Pannel340.Controls.Add(this.plC_NumBox888);
             this.rJ_Pannel340.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel340.IsSelected = false;
             this.rJ_Pannel340.Location = new System.Drawing.Point(44, 188);
             this.rJ_Pannel340.Name = "rJ_Pannel340";
             this.rJ_Pannel340.Size = new System.Drawing.Size(289, 53);
@@ -5404,6 +5412,7 @@
             this.rJ_Pannel341.Controls.Add(this.rJ_Lable417);
             this.rJ_Pannel341.Controls.Add(this.plC_NumBox889);
             this.rJ_Pannel341.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel341.IsSelected = false;
             this.rJ_Pannel341.Location = new System.Drawing.Point(44, 133);
             this.rJ_Pannel341.Name = "rJ_Pannel341";
             this.rJ_Pannel341.Size = new System.Drawing.Size(289, 53);
@@ -5457,6 +5466,7 @@
             this.rJ_Pannel342.Controls.Add(this.rJ_Lable418);
             this.rJ_Pannel342.Controls.Add(this.plC_NumBox890);
             this.rJ_Pannel342.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel342.IsSelected = false;
             this.rJ_Pannel342.Location = new System.Drawing.Point(44, 78);
             this.rJ_Pannel342.Name = "rJ_Pannel342";
             this.rJ_Pannel342.Size = new System.Drawing.Size(289, 53);
@@ -5514,7 +5524,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.rJ_Pannel21);
-            this.panel1.Controls.Add(this.plC_Button6);
+            this.panel1.Controls.Add(this.plC_Button_CCD01_01基準圓量測框);
             this.panel1.Controls.Add(this.rJ_Lable62);
             this.panel1.Controls.Add(this.rJ_Pannel20);
             this.panel1.Controls.Add(this.plC_CheckBox_CCD01_01基準圓繪製量測區塊);
@@ -5538,6 +5548,7 @@
             this.rJ_Pannel21.Controls.Add(this.rJ_Lable64);
             this.rJ_Pannel21.Controls.Add(this.plC_NumBox56);
             this.rJ_Pannel21.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel21.IsSelected = false;
             this.rJ_Pannel21.Location = new System.Drawing.Point(19, 113);
             this.rJ_Pannel21.Name = "rJ_Pannel21";
             this.rJ_Pannel21.Size = new System.Drawing.Size(322, 39);
@@ -5624,40 +5635,40 @@
             this.plC_NumBox56.顯示微調按鈕 = false;
             this.plC_NumBox56.顯示螢幕小鍵盤 = true;
             // 
-            // plC_Button6
+            // plC_Button_CCD01_01基準圓量測框
             // 
-            this.plC_Button6.Bool = false;
-            this.plC_Button6.but_press = false;
-            this.plC_Button6.Icon = System.Windows.Forms.MessageBoxIcon.Warning;
-            this.plC_Button6.Location = new System.Drawing.Point(546, 70);
-            this.plC_Button6.Margin = new System.Windows.Forms.Padding(4);
-            this.plC_Button6.Name = "plC_Button6";
-            this.plC_Button6.OFF_文字內容 = "量測框調整";
-            this.plC_Button6.OFF_文字字體 = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.plC_Button6.OFF_文字顏色 = System.Drawing.Color.Black;
-            this.plC_Button6.OFF_背景顏色 = System.Drawing.SystemColors.Control;
-            this.plC_Button6.ON_文字內容 = "量測框調整";
-            this.plC_Button6.ON_文字字體 = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.plC_Button6.ON_文字顏色 = System.Drawing.Color.White;
-            this.plC_Button6.ON_背景顏色 = System.Drawing.SystemColors.Control;
-            this.plC_Button6.Size = new System.Drawing.Size(150, 57);
-            this.plC_Button6.Style = MyUI.PLC_Button.StyleEnum.經典;
-            this.plC_Button6.TabIndex = 269;
-            this.plC_Button6.事件驅動 = false;
-            this.plC_Button6.字型鎖住 = false;
-            this.plC_Button6.寫入元件位置 = "S6360";
-            this.plC_Button6.按鈕型態 = MyUI.PLC_Button.StatusEnum.保持型;
-            this.plC_Button6.按鍵方式 = MyUI.PLC_Button.PressEnum.Mouse_左鍵;
-            this.plC_Button6.文字鎖住 = false;
-            this.plC_Button6.狀態OFF圖片 = ((System.Drawing.Image)(resources.GetObject("plC_Button6.狀態OFF圖片")));
-            this.plC_Button6.狀態ON圖片 = ((System.Drawing.Image)(resources.GetObject("plC_Button6.狀態ON圖片")));
-            this.plC_Button6.讀取位元反向 = false;
-            this.plC_Button6.讀取元件位置 = "S6370";
-            this.plC_Button6.讀寫鎖住 = false;
-            this.plC_Button6.起始狀態 = false;
-            this.plC_Button6.音效 = true;
-            this.plC_Button6.顯示 = false;
-            this.plC_Button6.顯示狀態 = false;
+            this.plC_Button_CCD01_01基準圓量測框.Bool = false;
+            this.plC_Button_CCD01_01基準圓量測框.but_press = false;
+            this.plC_Button_CCD01_01基準圓量測框.Icon = System.Windows.Forms.MessageBoxIcon.Warning;
+            this.plC_Button_CCD01_01基準圓量測框.Location = new System.Drawing.Point(546, 70);
+            this.plC_Button_CCD01_01基準圓量測框.Margin = new System.Windows.Forms.Padding(4);
+            this.plC_Button_CCD01_01基準圓量測框.Name = "plC_Button_CCD01_01基準圓量測框";
+            this.plC_Button_CCD01_01基準圓量測框.OFF_文字內容 = "量測框調整";
+            this.plC_Button_CCD01_01基準圓量測框.OFF_文字字體 = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.plC_Button_CCD01_01基準圓量測框.OFF_文字顏色 = System.Drawing.Color.Black;
+            this.plC_Button_CCD01_01基準圓量測框.OFF_背景顏色 = System.Drawing.SystemColors.Control;
+            this.plC_Button_CCD01_01基準圓量測框.ON_文字內容 = "量測框調整";
+            this.plC_Button_CCD01_01基準圓量測框.ON_文字字體 = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.plC_Button_CCD01_01基準圓量測框.ON_文字顏色 = System.Drawing.Color.White;
+            this.plC_Button_CCD01_01基準圓量測框.ON_背景顏色 = System.Drawing.SystemColors.Control;
+            this.plC_Button_CCD01_01基準圓量測框.Size = new System.Drawing.Size(150, 57);
+            this.plC_Button_CCD01_01基準圓量測框.Style = MyUI.PLC_Button.StyleEnum.經典;
+            this.plC_Button_CCD01_01基準圓量測框.TabIndex = 269;
+            this.plC_Button_CCD01_01基準圓量測框.事件驅動 = false;
+            this.plC_Button_CCD01_01基準圓量測框.字型鎖住 = false;
+            this.plC_Button_CCD01_01基準圓量測框.寫入元件位置 = "S6360";
+            this.plC_Button_CCD01_01基準圓量測框.按鈕型態 = MyUI.PLC_Button.StatusEnum.保持型;
+            this.plC_Button_CCD01_01基準圓量測框.按鍵方式 = MyUI.PLC_Button.PressEnum.Mouse_左鍵;
+            this.plC_Button_CCD01_01基準圓量測框.文字鎖住 = false;
+            this.plC_Button_CCD01_01基準圓量測框.狀態OFF圖片 = ((System.Drawing.Image)(resources.GetObject("plC_Button_CCD01_01基準圓量測框.狀態OFF圖片")));
+            this.plC_Button_CCD01_01基準圓量測框.狀態ON圖片 = ((System.Drawing.Image)(resources.GetObject("plC_Button_CCD01_01基準圓量測框.狀態ON圖片")));
+            this.plC_Button_CCD01_01基準圓量測框.讀取位元反向 = false;
+            this.plC_Button_CCD01_01基準圓量測框.讀取元件位置 = "S6370";
+            this.plC_Button_CCD01_01基準圓量測框.讀寫鎖住 = false;
+            this.plC_Button_CCD01_01基準圓量測框.起始狀態 = false;
+            this.plC_Button_CCD01_01基準圓量測框.音效 = true;
+            this.plC_Button_CCD01_01基準圓量測框.顯示 = false;
+            this.plC_Button_CCD01_01基準圓量測框.顯示狀態 = false;
             // 
             // rJ_Lable62
             // 
@@ -5688,6 +5699,7 @@
             this.rJ_Pannel20.Controls.Add(this.rJ_Lable63);
             this.rJ_Pannel20.Controls.Add(this.plC_NumBox53);
             this.rJ_Pannel20.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel20.IsSelected = false;
             this.rJ_Pannel20.Location = new System.Drawing.Point(19, 70);
             this.rJ_Pannel20.Name = "rJ_Pannel20";
             this.rJ_Pannel20.Size = new System.Drawing.Size(322, 39);
@@ -5954,6 +5966,7 @@
             this.rJ_Pannel289.Controls.Add(this.plC_TrackBarHorizontal3);
             this.rJ_Pannel289.Controls.Add(this.plC_TrackBarHorizontal2);
             this.rJ_Pannel289.ForeColor = System.Drawing.Color.Black;
+            this.rJ_Pannel289.IsSelected = false;
             this.rJ_Pannel289.Location = new System.Drawing.Point(18, 6);
             this.rJ_Pannel289.Name = "rJ_Pannel289";
             this.rJ_Pannel289.Size = new System.Drawing.Size(524, 325);
@@ -5969,7 +5982,7 @@
             this.plC_TrackBarHorizontal1.TabIndex = 1;
             this.plC_TrackBarHorizontal1.TickStyle = System.Windows.Forms.TickStyle.BottomRight;
             this.plC_TrackBarHorizontal1.Value = 0;
-            this.plC_TrackBarHorizontal1.刻度最大值 = 1000000;
+            this.plC_TrackBarHorizontal1.刻度最大值 = 100000;
             this.plC_TrackBarHorizontal1.刻度最小值 = 0;
             this.plC_TrackBarHorizontal1.刻度間隔 = 10;
             this.plC_TrackBarHorizontal1.寫入位置註解 = "CCD01_01_電子快門";
@@ -6041,6 +6054,7 @@
             this.rJ_Pannel343.Controls.Add(this.plC_TrackBarHorizontal20);
             this.rJ_Pannel343.Controls.Add(this.plC_TrackBarHorizontal21);
             this.rJ_Pannel343.ForeColor = System.Drawing.Color.Black;
+            this.rJ_Pannel343.IsSelected = false;
             this.rJ_Pannel343.Location = new System.Drawing.Point(18, 337);
             this.rJ_Pannel343.Name = "rJ_Pannel343";
             this.rJ_Pannel343.Size = new System.Drawing.Size(524, 215);
@@ -6130,6 +6144,7 @@
             this.rJ_Pannel1.Controls.Add(this.rJ_Pannel18);
             this.rJ_Pannel1.Controls.Add(this.rJ_Pannel19);
             this.rJ_Pannel1.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel1.IsSelected = false;
             this.rJ_Pannel1.Location = new System.Drawing.Point(7, 175);
             this.rJ_Pannel1.Name = "rJ_Pannel1";
             this.rJ_Pannel1.Size = new System.Drawing.Size(762, 458);
@@ -6144,6 +6159,7 @@
             this.rJ_Pannel117.Controls.Add(this.rJ_Lable47);
             this.rJ_Pannel117.Controls.Add(this.plC_NumBox295);
             this.rJ_Pannel117.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel117.IsSelected = false;
             this.rJ_Pannel117.Location = new System.Drawing.Point(44, 320);
             this.rJ_Pannel117.Name = "rJ_Pannel117";
             this.rJ_Pannel117.Size = new System.Drawing.Size(289, 53);
@@ -6256,6 +6272,7 @@
             this.rJ_Pannel2.Controls.Add(this.plC_RJ_ComboBox2);
             this.rJ_Pannel2.Controls.Add(this.rJ_Lable48);
             this.rJ_Pannel2.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel2.IsSelected = false;
             this.rJ_Pannel2.Location = new System.Drawing.Point(44, 243);
             this.rJ_Pannel2.Name = "rJ_Pannel2";
             this.rJ_Pannel2.Size = new System.Drawing.Size(401, 53);
@@ -6366,6 +6383,7 @@
             this.rJ_Pannel3.Controls.Add(this.rJ_Lable50);
             this.rJ_Pannel3.Controls.Add(this.plC_NumBox45);
             this.rJ_Pannel3.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel3.IsSelected = false;
             this.rJ_Pannel3.Location = new System.Drawing.Point(339, 188);
             this.rJ_Pannel3.Name = "rJ_Pannel3";
             this.rJ_Pannel3.Size = new System.Drawing.Size(289, 53);
@@ -6420,6 +6438,7 @@
             this.rJ_Pannel6.Controls.Add(this.rJ_Lable51);
             this.rJ_Pannel6.Controls.Add(this.plC_NumBox46);
             this.rJ_Pannel6.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel6.IsSelected = false;
             this.rJ_Pannel6.Location = new System.Drawing.Point(339, 133);
             this.rJ_Pannel6.Name = "rJ_Pannel6";
             this.rJ_Pannel6.Size = new System.Drawing.Size(289, 53);
@@ -6474,6 +6493,7 @@
             this.rJ_Pannel9.Controls.Add(this.rJ_Lable52);
             this.rJ_Pannel9.Controls.Add(this.plC_NumBox47);
             this.rJ_Pannel9.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel9.IsSelected = false;
             this.rJ_Pannel9.Location = new System.Drawing.Point(339, 78);
             this.rJ_Pannel9.Name = "rJ_Pannel9";
             this.rJ_Pannel9.Size = new System.Drawing.Size(289, 53);
@@ -6528,6 +6548,7 @@
             this.rJ_Pannel10.Controls.Add(this.rJ_Lable59);
             this.rJ_Pannel10.Controls.Add(this.plC_NumBox48);
             this.rJ_Pannel10.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel10.IsSelected = false;
             this.rJ_Pannel10.Location = new System.Drawing.Point(44, 188);
             this.rJ_Pannel10.Name = "rJ_Pannel10";
             this.rJ_Pannel10.Size = new System.Drawing.Size(289, 53);
@@ -6582,6 +6603,7 @@
             this.rJ_Pannel18.Controls.Add(this.rJ_Lable60);
             this.rJ_Pannel18.Controls.Add(this.plC_NumBox49);
             this.rJ_Pannel18.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel18.IsSelected = false;
             this.rJ_Pannel18.Location = new System.Drawing.Point(44, 133);
             this.rJ_Pannel18.Name = "rJ_Pannel18";
             this.rJ_Pannel18.Size = new System.Drawing.Size(289, 53);
@@ -6636,6 +6658,7 @@
             this.rJ_Pannel19.Controls.Add(this.rJ_Lable61);
             this.rJ_Pannel19.Controls.Add(this.plC_NumBox50);
             this.rJ_Pannel19.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel19.IsSelected = false;
             this.rJ_Pannel19.Location = new System.Drawing.Point(44, 78);
             this.rJ_Pannel19.Name = "rJ_Pannel19";
             this.rJ_Pannel19.Size = new System.Drawing.Size(289, 53);
@@ -6692,6 +6715,7 @@
             this.rJ_Pannel5.Controls.Add(this.plC_NumBox62);
             this.rJ_Pannel5.Controls.Add(this.plC_NumBox63);
             this.rJ_Pannel5.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel5.IsSelected = false;
             this.rJ_Pannel5.Location = new System.Drawing.Point(18, 83);
             this.rJ_Pannel5.Name = "rJ_Pannel5";
             this.rJ_Pannel5.Size = new System.Drawing.Size(356, 39);
@@ -6810,6 +6834,7 @@
             this.rJ_Pannel4.Controls.Add(this.plC_NumBox59);
             this.rJ_Pannel4.Controls.Add(this.plC_NumBox60);
             this.rJ_Pannel4.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel4.IsSelected = false;
             this.rJ_Pannel4.Location = new System.Drawing.Point(19, 130);
             this.rJ_Pannel4.Name = "rJ_Pannel4";
             this.rJ_Pannel4.Size = new System.Drawing.Size(356, 39);
@@ -7106,13 +7131,13 @@
             this.plC_RJ_Button14.UseVisualStyleBackColor = false;
             this.plC_RJ_Button14.字型鎖住 = false;
             this.plC_RJ_Button14.寫入位置註解 = "CCD01_01_Tech_SNAP按鈕";
-            this.plC_RJ_Button14.寫入元件位置 = "S15320";
+            this.plC_RJ_Button14.寫入元件位置 = "S15220";
             this.plC_RJ_Button14.按鈕型態 = MyUI.PLC_RJ_Button.StatusEnum.保持型;
             this.plC_RJ_Button14.按鍵方式 = MyUI.PLC_RJ_Button.PressEnum.Mouse_左鍵;
             this.plC_RJ_Button14.文字鎖住 = false;
             this.plC_RJ_Button14.讀取位元反向 = false;
             this.plC_RJ_Button14.讀取位置註解 = "CCD01_01_Tech_SNAP按鈕";
-            this.plC_RJ_Button14.讀取元件位置 = "S15330";
+            this.plC_RJ_Button14.讀取元件位置 = "S15230";
             this.plC_RJ_Button14.讀寫鎖住 = false;
             this.plC_RJ_Button14.音效 = true;
             this.plC_RJ_Button14.顯示 = false;
@@ -7169,13 +7194,13 @@
             this.plC_RJ_Button15.UseVisualStyleBackColor = false;
             this.plC_RJ_Button15.字型鎖住 = false;
             this.plC_RJ_Button15.寫入位置註解 = "CCD01_01_Tech_SNAP按鈕";
-            this.plC_RJ_Button15.寫入元件位置 = "S15300";
+            this.plC_RJ_Button15.寫入元件位置 = "S15200";
             this.plC_RJ_Button15.按鈕型態 = MyUI.PLC_RJ_Button.StatusEnum.保持型;
             this.plC_RJ_Button15.按鍵方式 = MyUI.PLC_RJ_Button.PressEnum.Mouse_左鍵;
             this.plC_RJ_Button15.文字鎖住 = false;
             this.plC_RJ_Button15.讀取位元反向 = false;
             this.plC_RJ_Button15.讀取位置註解 = "CCD01_01_Tech_SNAP按鈕";
-            this.plC_RJ_Button15.讀取元件位置 = "S15310";
+            this.plC_RJ_Button15.讀取元件位置 = "S15210";
             this.plC_RJ_Button15.讀寫鎖住 = false;
             this.plC_RJ_Button15.音效 = true;
             this.plC_RJ_Button15.顯示 = false;
@@ -7194,6 +7219,7 @@
             this.rJ_GroupBox4.ContentsPanel.Controls.Add(this.tabControl10);
             this.rJ_GroupBox4.ContentsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rJ_GroupBox4.ContentsPanel.ForeColor = System.Drawing.Color.White;
+            this.rJ_GroupBox4.ContentsPanel.IsSelected = false;
             this.rJ_GroupBox4.ContentsPanel.Location = new System.Drawing.Point(0, 37);
             this.rJ_GroupBox4.ContentsPanel.Name = "ContentsPanel";
             this.rJ_GroupBox4.ContentsPanel.Size = new System.Drawing.Size(798, 838);
@@ -8947,6 +8973,7 @@
             this.rJ_Pannel64.Controls.Add(this.panel12);
             this.rJ_Pannel64.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rJ_Pannel64.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel64.IsSelected = false;
             this.rJ_Pannel64.Location = new System.Drawing.Point(0, 0);
             this.rJ_Pannel64.Name = "rJ_Pannel64";
             this.rJ_Pannel64.Size = new System.Drawing.Size(783, 808);
@@ -8996,6 +9023,7 @@
             this.rJ_Pannel65.Controls.Add(this.plC_NumBox263);
             this.rJ_Pannel65.Controls.Add(this.plC_NumBox264);
             this.rJ_Pannel65.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel65.IsSelected = false;
             this.rJ_Pannel65.Location = new System.Drawing.Point(12, 290);
             this.rJ_Pannel65.Name = "rJ_Pannel65";
             this.rJ_Pannel65.Size = new System.Drawing.Size(356, 39);
@@ -9165,6 +9193,7 @@
             this.rJ_Pannel66.Controls.Add(this.rJ_Lable252);
             this.rJ_Pannel66.Controls.Add(this.plC_NumBox265);
             this.rJ_Pannel66.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel66.IsSelected = false;
             this.rJ_Pannel66.Location = new System.Drawing.Point(389, 121);
             this.rJ_Pannel66.Name = "rJ_Pannel66";
             this.rJ_Pannel66.Size = new System.Drawing.Size(221, 39);
@@ -9333,6 +9362,7 @@
             this.rJ_Pannel67.Controls.Add(this.plC_NumBox266);
             this.rJ_Pannel67.Controls.Add(this.plC_NumBox267);
             this.rJ_Pannel67.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel67.IsSelected = false;
             this.rJ_Pannel67.Location = new System.Drawing.Point(389, 75);
             this.rJ_Pannel67.Name = "rJ_Pannel67";
             this.rJ_Pannel67.Size = new System.Drawing.Size(288, 39);
@@ -9512,6 +9542,7 @@
             this.rJ_Pannel68.Controls.Add(this.plC_NumBox269);
             this.rJ_Pannel68.Controls.Add(this.plC_NumBox270);
             this.rJ_Pannel68.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel68.IsSelected = false;
             this.rJ_Pannel68.Location = new System.Drawing.Point(12, 74);
             this.rJ_Pannel68.Name = "rJ_Pannel68";
             this.rJ_Pannel68.Size = new System.Drawing.Size(356, 39);
@@ -9738,6 +9769,7 @@
             this.rJ_Pannel69.Controls.Add(this.plC_NumBox272);
             this.rJ_Pannel69.Controls.Add(this.plC_NumBox273);
             this.rJ_Pannel69.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel69.IsSelected = false;
             this.rJ_Pannel69.Location = new System.Drawing.Point(13, 121);
             this.rJ_Pannel69.Name = "rJ_Pannel69";
             this.rJ_Pannel69.Size = new System.Drawing.Size(356, 39);
@@ -9853,6 +9885,7 @@
             this.rJ_Pannel70.Controls.Add(this.plC_NumBox275);
             this.rJ_Pannel70.Controls.Add(this.plC_NumBox276);
             this.rJ_Pannel70.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel70.IsSelected = false;
             this.rJ_Pannel70.Location = new System.Drawing.Point(11, 248);
             this.rJ_Pannel70.Name = "rJ_Pannel70";
             this.rJ_Pannel70.Size = new System.Drawing.Size(356, 39);
@@ -10025,6 +10058,7 @@
             this.rJ_Pannel71.Controls.Add(this.rJ_Lable271);
             this.rJ_Pannel71.Controls.Add(this.plC_NumBox279);
             this.rJ_Pannel71.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel71.IsSelected = false;
             this.rJ_Pannel71.Location = new System.Drawing.Point(19, 70);
             this.rJ_Pannel71.Name = "rJ_Pannel71";
             this.rJ_Pannel71.Size = new System.Drawing.Size(330, 39);
@@ -10254,6 +10288,7 @@
             this.rJ_Pannel72.Controls.Add(this.rJ_Lable274);
             this.rJ_Pannel72.Controls.Add(this.plC_NumBox283);
             this.rJ_Pannel72.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel72.IsSelected = false;
             this.rJ_Pannel72.Location = new System.Drawing.Point(19, 113);
             this.rJ_Pannel72.Name = "rJ_Pannel72";
             this.rJ_Pannel72.Size = new System.Drawing.Size(330, 39);
@@ -10431,6 +10466,7 @@
             this.rJ_Pannel73.Controls.Add(this.plC_TrackBarHorizontal15);
             this.rJ_Pannel73.Controls.Add(this.plC_TrackBarHorizontal16);
             this.rJ_Pannel73.ForeColor = System.Drawing.Color.Black;
+            this.rJ_Pannel73.IsSelected = false;
             this.rJ_Pannel73.Location = new System.Drawing.Point(18, 6);
             this.rJ_Pannel73.Name = "rJ_Pannel73";
             this.rJ_Pannel73.Size = new System.Drawing.Size(524, 325);
@@ -10446,7 +10482,7 @@
             this.plC_TrackBarHorizontal14.TabIndex = 1;
             this.plC_TrackBarHorizontal14.TickStyle = System.Windows.Forms.TickStyle.BottomRight;
             this.plC_TrackBarHorizontal14.Value = 0;
-            this.plC_TrackBarHorizontal14.刻度最大值 = 1000000;
+            this.plC_TrackBarHorizontal14.刻度最大值 = 100000;
             this.plC_TrackBarHorizontal14.刻度最小值 = 0;
             this.plC_TrackBarHorizontal14.刻度間隔 = 10;
             this.plC_TrackBarHorizontal14.寫入位置註解 = "CCD01_01_電子快門";
@@ -10518,6 +10554,7 @@
             this.rJ_Pannel74.Controls.Add(this.plC_TrackBarHorizontal17);
             this.rJ_Pannel74.Controls.Add(this.plC_TrackBarHorizontal18);
             this.rJ_Pannel74.ForeColor = System.Drawing.Color.Black;
+            this.rJ_Pannel74.IsSelected = false;
             this.rJ_Pannel74.Location = new System.Drawing.Point(18, 337);
             this.rJ_Pannel74.Name = "rJ_Pannel74";
             this.rJ_Pannel74.Size = new System.Drawing.Size(524, 215);
@@ -10606,6 +10643,7 @@
             this.rJ_Pannel75.Controls.Add(this.plC_NumBox286);
             this.rJ_Pannel75.Controls.Add(this.plC_NumBox287);
             this.rJ_Pannel75.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel75.IsSelected = false;
             this.rJ_Pannel75.Location = new System.Drawing.Point(18, 83);
             this.rJ_Pannel75.Name = "rJ_Pannel75";
             this.rJ_Pannel75.Size = new System.Drawing.Size(356, 39);
@@ -10724,6 +10762,7 @@
             this.rJ_Pannel76.Controls.Add(this.plC_NumBox289);
             this.rJ_Pannel76.Controls.Add(this.plC_NumBox290);
             this.rJ_Pannel76.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel76.IsSelected = false;
             this.rJ_Pannel76.Location = new System.Drawing.Point(19, 130);
             this.rJ_Pannel76.Name = "rJ_Pannel76";
             this.rJ_Pannel76.Size = new System.Drawing.Size(356, 39);
@@ -11818,6 +11857,7 @@
             this.rJ_GroupBox2.ContentsPanel.Controls.Add(this.tabControl6);
             this.rJ_GroupBox2.ContentsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rJ_GroupBox2.ContentsPanel.ForeColor = System.Drawing.Color.White;
+            this.rJ_GroupBox2.ContentsPanel.IsSelected = false;
             this.rJ_GroupBox2.ContentsPanel.Location = new System.Drawing.Point(0, 37);
             this.rJ_GroupBox2.ContentsPanel.Name = "ContentsPanel";
             this.rJ_GroupBox2.ContentsPanel.Size = new System.Drawing.Size(798, 838);
@@ -13577,6 +13617,7 @@
             this.rJ_Pannel7.Controls.Add(this.rJ_Pannel16);
             this.rJ_Pannel7.Controls.Add(this.rJ_Pannel17);
             this.rJ_Pannel7.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel7.IsSelected = false;
             this.rJ_Pannel7.Location = new System.Drawing.Point(6, 3);
             this.rJ_Pannel7.Name = "rJ_Pannel7";
             this.rJ_Pannel7.Size = new System.Drawing.Size(770, 458);
@@ -13591,6 +13632,7 @@
             this.rJ_Pannel8.Controls.Add(this.rJ_Lable87);
             this.rJ_Pannel8.Controls.Add(this.plC_NumBox101);
             this.rJ_Pannel8.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel8.IsSelected = false;
             this.rJ_Pannel8.Location = new System.Drawing.Point(44, 320);
             this.rJ_Pannel8.Name = "rJ_Pannel8";
             this.rJ_Pannel8.Size = new System.Drawing.Size(289, 53);
@@ -13702,6 +13744,7 @@
             this.rJ_Pannel11.Controls.Add(this.plC_RJ_ComboBox1);
             this.rJ_Pannel11.Controls.Add(this.rJ_Lable88);
             this.rJ_Pannel11.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel11.IsSelected = false;
             this.rJ_Pannel11.Location = new System.Drawing.Point(44, 243);
             this.rJ_Pannel11.Name = "rJ_Pannel11";
             this.rJ_Pannel11.Size = new System.Drawing.Size(401, 53);
@@ -13812,6 +13855,7 @@
             this.rJ_Pannel12.Controls.Add(this.rJ_Lable90);
             this.rJ_Pannel12.Controls.Add(this.plC_NumBox102);
             this.rJ_Pannel12.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel12.IsSelected = false;
             this.rJ_Pannel12.Location = new System.Drawing.Point(339, 188);
             this.rJ_Pannel12.Name = "rJ_Pannel12";
             this.rJ_Pannel12.Size = new System.Drawing.Size(289, 53);
@@ -13865,6 +13909,7 @@
             this.rJ_Pannel13.Controls.Add(this.rJ_Lable91);
             this.rJ_Pannel13.Controls.Add(this.plC_NumBox103);
             this.rJ_Pannel13.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel13.IsSelected = false;
             this.rJ_Pannel13.Location = new System.Drawing.Point(339, 133);
             this.rJ_Pannel13.Name = "rJ_Pannel13";
             this.rJ_Pannel13.Size = new System.Drawing.Size(289, 53);
@@ -13918,6 +13963,7 @@
             this.rJ_Pannel14.Controls.Add(this.rJ_Lable92);
             this.rJ_Pannel14.Controls.Add(this.plC_NumBox104);
             this.rJ_Pannel14.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel14.IsSelected = false;
             this.rJ_Pannel14.Location = new System.Drawing.Point(339, 78);
             this.rJ_Pannel14.Name = "rJ_Pannel14";
             this.rJ_Pannel14.Size = new System.Drawing.Size(289, 53);
@@ -13971,6 +14017,7 @@
             this.rJ_Pannel15.Controls.Add(this.rJ_Lable93);
             this.rJ_Pannel15.Controls.Add(this.plC_NumBox105);
             this.rJ_Pannel15.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel15.IsSelected = false;
             this.rJ_Pannel15.Location = new System.Drawing.Point(44, 188);
             this.rJ_Pannel15.Name = "rJ_Pannel15";
             this.rJ_Pannel15.Size = new System.Drawing.Size(289, 53);
@@ -14024,6 +14071,7 @@
             this.rJ_Pannel16.Controls.Add(this.rJ_Lable94);
             this.rJ_Pannel16.Controls.Add(this.plC_NumBox106);
             this.rJ_Pannel16.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel16.IsSelected = false;
             this.rJ_Pannel16.Location = new System.Drawing.Point(44, 133);
             this.rJ_Pannel16.Name = "rJ_Pannel16";
             this.rJ_Pannel16.Size = new System.Drawing.Size(289, 53);
@@ -14077,6 +14125,7 @@
             this.rJ_Pannel17.Controls.Add(this.rJ_Lable96);
             this.rJ_Pannel17.Controls.Add(this.plC_NumBox107);
             this.rJ_Pannel17.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel17.IsSelected = false;
             this.rJ_Pannel17.Location = new System.Drawing.Point(44, 78);
             this.rJ_Pannel17.Name = "rJ_Pannel17";
             this.rJ_Pannel17.Size = new System.Drawing.Size(289, 53);
@@ -14207,6 +14256,7 @@
             this.rJ_Pannel26.Controls.Add(this.plC_TrackBarHorizontal5);
             this.rJ_Pannel26.Controls.Add(this.plC_TrackBarHorizontal6);
             this.rJ_Pannel26.ForeColor = System.Drawing.Color.Black;
+            this.rJ_Pannel26.IsSelected = false;
             this.rJ_Pannel26.Location = new System.Drawing.Point(18, 6);
             this.rJ_Pannel26.Name = "rJ_Pannel26";
             this.rJ_Pannel26.Size = new System.Drawing.Size(524, 325);
@@ -14222,7 +14272,7 @@
             this.plC_TrackBarHorizontal4.TabIndex = 1;
             this.plC_TrackBarHorizontal4.TickStyle = System.Windows.Forms.TickStyle.BottomRight;
             this.plC_TrackBarHorizontal4.Value = 0;
-            this.plC_TrackBarHorizontal4.刻度最大值 = 1000000;
+            this.plC_TrackBarHorizontal4.刻度最大值 = 100000;
             this.plC_TrackBarHorizontal4.刻度最小值 = 0;
             this.plC_TrackBarHorizontal4.刻度間隔 = 10;
             this.plC_TrackBarHorizontal4.寫入位置註解 = "CCD01_01_電子快門";
@@ -14294,6 +14344,7 @@
             this.rJ_Pannel27.Controls.Add(this.plC_TrackBarHorizontal7);
             this.rJ_Pannel27.Controls.Add(this.plC_TrackBarHorizontal8);
             this.rJ_Pannel27.ForeColor = System.Drawing.Color.Black;
+            this.rJ_Pannel27.IsSelected = false;
             this.rJ_Pannel27.Location = new System.Drawing.Point(18, 337);
             this.rJ_Pannel27.Name = "rJ_Pannel27";
             this.rJ_Pannel27.Size = new System.Drawing.Size(524, 215);
@@ -14373,6 +14424,7 @@
             this.rJ_Pannel28.Controls.Add(this.plC_NumBox130);
             this.rJ_Pannel28.Controls.Add(this.plC_NumBox131);
             this.rJ_Pannel28.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel28.IsSelected = false;
             this.rJ_Pannel28.Location = new System.Drawing.Point(18, 83);
             this.rJ_Pannel28.Name = "rJ_Pannel28";
             this.rJ_Pannel28.Size = new System.Drawing.Size(356, 39);
@@ -14491,6 +14543,7 @@
             this.rJ_Pannel29.Controls.Add(this.plC_NumBox133);
             this.rJ_Pannel29.Controls.Add(this.plC_NumBox134);
             this.rJ_Pannel29.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel29.IsSelected = false;
             this.rJ_Pannel29.Location = new System.Drawing.Point(19, 130);
             this.rJ_Pannel29.Name = "rJ_Pannel29";
             this.rJ_Pannel29.Size = new System.Drawing.Size(356, 39);
@@ -14685,7 +14738,7 @@
             this.tabPage27.Location = new System.Drawing.Point(4, 22);
             this.tabPage27.Name = "tabPage27";
             this.tabPage27.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage27.Size = new System.Drawing.Size(475, 355);
+            this.tabPage27.Size = new System.Drawing.Size(1735, 989);
             this.tabPage27.TabIndex = 1;
             this.tabPage27.Text = "CCD2-2";
             this.tabPage27.UseVisualStyleBackColor = true;
@@ -14867,6 +14920,7 @@
             this.rJ_GroupBox3.ContentsPanel.Controls.Add(this.tabControl8);
             this.rJ_GroupBox3.ContentsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rJ_GroupBox3.ContentsPanel.ForeColor = System.Drawing.Color.White;
+            this.rJ_GroupBox3.ContentsPanel.IsSelected = false;
             this.rJ_GroupBox3.ContentsPanel.Location = new System.Drawing.Point(0, 37);
             this.rJ_GroupBox3.ContentsPanel.Name = "ContentsPanel";
             this.rJ_GroupBox3.ContentsPanel.Size = new System.Drawing.Size(798, 838);
@@ -16618,6 +16672,7 @@
             this.rJ_Pannel41.Controls.Add(this.panel9);
             this.rJ_Pannel41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rJ_Pannel41.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel41.IsSelected = false;
             this.rJ_Pannel41.Location = new System.Drawing.Point(0, 0);
             this.rJ_Pannel41.Name = "rJ_Pannel41";
             this.rJ_Pannel41.Size = new System.Drawing.Size(783, 808);
@@ -16667,6 +16722,7 @@
             this.rJ_Pannel42.Controls.Add(this.plC_NumBox188);
             this.rJ_Pannel42.Controls.Add(this.plC_NumBox189);
             this.rJ_Pannel42.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel42.IsSelected = false;
             this.rJ_Pannel42.Location = new System.Drawing.Point(12, 293);
             this.rJ_Pannel42.Name = "rJ_Pannel42";
             this.rJ_Pannel42.Size = new System.Drawing.Size(356, 39);
@@ -16836,6 +16892,7 @@
             this.rJ_Pannel43.Controls.Add(this.rJ_Lable176);
             this.rJ_Pannel43.Controls.Add(this.plC_NumBox190);
             this.rJ_Pannel43.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel43.IsSelected = false;
             this.rJ_Pannel43.Location = new System.Drawing.Point(389, 121);
             this.rJ_Pannel43.Name = "rJ_Pannel43";
             this.rJ_Pannel43.Size = new System.Drawing.Size(221, 39);
@@ -17004,6 +17061,7 @@
             this.rJ_Pannel44.Controls.Add(this.plC_NumBox191);
             this.rJ_Pannel44.Controls.Add(this.plC_NumBox192);
             this.rJ_Pannel44.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel44.IsSelected = false;
             this.rJ_Pannel44.Location = new System.Drawing.Point(389, 75);
             this.rJ_Pannel44.Name = "rJ_Pannel44";
             this.rJ_Pannel44.Size = new System.Drawing.Size(288, 39);
@@ -17183,6 +17241,7 @@
             this.rJ_Pannel45.Controls.Add(this.plC_NumBox194);
             this.rJ_Pannel45.Controls.Add(this.plC_NumBox195);
             this.rJ_Pannel45.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel45.IsSelected = false;
             this.rJ_Pannel45.Location = new System.Drawing.Point(12, 74);
             this.rJ_Pannel45.Name = "rJ_Pannel45";
             this.rJ_Pannel45.Size = new System.Drawing.Size(356, 39);
@@ -17409,6 +17468,7 @@
             this.rJ_Pannel46.Controls.Add(this.plC_NumBox197);
             this.rJ_Pannel46.Controls.Add(this.plC_NumBox198);
             this.rJ_Pannel46.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel46.IsSelected = false;
             this.rJ_Pannel46.Location = new System.Drawing.Point(13, 121);
             this.rJ_Pannel46.Name = "rJ_Pannel46";
             this.rJ_Pannel46.Size = new System.Drawing.Size(356, 39);
@@ -17524,6 +17584,7 @@
             this.rJ_Pannel47.Controls.Add(this.plC_NumBox200);
             this.rJ_Pannel47.Controls.Add(this.plC_NumBox201);
             this.rJ_Pannel47.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel47.IsSelected = false;
             this.rJ_Pannel47.Location = new System.Drawing.Point(11, 248);
             this.rJ_Pannel47.Name = "rJ_Pannel47";
             this.rJ_Pannel47.Size = new System.Drawing.Size(356, 39);
@@ -17696,6 +17757,7 @@
             this.rJ_Pannel48.Controls.Add(this.rJ_Lable197);
             this.rJ_Pannel48.Controls.Add(this.plC_NumBox204);
             this.rJ_Pannel48.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel48.IsSelected = false;
             this.rJ_Pannel48.Location = new System.Drawing.Point(19, 70);
             this.rJ_Pannel48.Name = "rJ_Pannel48";
             this.rJ_Pannel48.Size = new System.Drawing.Size(330, 39);
@@ -17925,6 +17987,7 @@
             this.rJ_Pannel49.Controls.Add(this.rJ_Lable200);
             this.rJ_Pannel49.Controls.Add(this.plC_NumBox208);
             this.rJ_Pannel49.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel49.IsSelected = false;
             this.rJ_Pannel49.Location = new System.Drawing.Point(19, 113);
             this.rJ_Pannel49.Name = "rJ_Pannel49";
             this.rJ_Pannel49.Size = new System.Drawing.Size(330, 39);
@@ -18102,6 +18165,7 @@
             this.rJ_Pannel50.Controls.Add(this.plC_TrackBarHorizontal10);
             this.rJ_Pannel50.Controls.Add(this.plC_TrackBarHorizontal11);
             this.rJ_Pannel50.ForeColor = System.Drawing.Color.Black;
+            this.rJ_Pannel50.IsSelected = false;
             this.rJ_Pannel50.Location = new System.Drawing.Point(18, 6);
             this.rJ_Pannel50.Name = "rJ_Pannel50";
             this.rJ_Pannel50.Size = new System.Drawing.Size(524, 325);
@@ -18117,7 +18181,7 @@
             this.plC_TrackBarHorizontal9.TabIndex = 1;
             this.plC_TrackBarHorizontal9.TickStyle = System.Windows.Forms.TickStyle.BottomRight;
             this.plC_TrackBarHorizontal9.Value = 0;
-            this.plC_TrackBarHorizontal9.刻度最大值 = 1000000;
+            this.plC_TrackBarHorizontal9.刻度最大值 = 100000;
             this.plC_TrackBarHorizontal9.刻度最小值 = 0;
             this.plC_TrackBarHorizontal9.刻度間隔 = 10;
             this.plC_TrackBarHorizontal9.寫入位置註解 = "CCD01_01_電子快門";
@@ -18189,6 +18253,7 @@
             this.rJ_Pannel51.Controls.Add(this.plC_TrackBarHorizontal12);
             this.rJ_Pannel51.Controls.Add(this.plC_TrackBarHorizontal13);
             this.rJ_Pannel51.ForeColor = System.Drawing.Color.Black;
+            this.rJ_Pannel51.IsSelected = false;
             this.rJ_Pannel51.Location = new System.Drawing.Point(18, 337);
             this.rJ_Pannel51.Name = "rJ_Pannel51";
             this.rJ_Pannel51.Size = new System.Drawing.Size(524, 215);
@@ -18277,6 +18342,7 @@
             this.rJ_Pannel52.Controls.Add(this.plC_NumBox211);
             this.rJ_Pannel52.Controls.Add(this.plC_NumBox212);
             this.rJ_Pannel52.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel52.IsSelected = false;
             this.rJ_Pannel52.Location = new System.Drawing.Point(18, 83);
             this.rJ_Pannel52.Name = "rJ_Pannel52";
             this.rJ_Pannel52.Size = new System.Drawing.Size(356, 39);
@@ -18395,6 +18461,7 @@
             this.rJ_Pannel53.Controls.Add(this.plC_NumBox214);
             this.rJ_Pannel53.Controls.Add(this.plC_NumBox215);
             this.rJ_Pannel53.ForeColor = System.Drawing.Color.White;
+            this.rJ_Pannel53.IsSelected = false;
             this.rJ_Pannel53.Location = new System.Drawing.Point(19, 130);
             this.rJ_Pannel53.Name = "rJ_Pannel53";
             this.rJ_Pannel53.Size = new System.Drawing.Size(356, 39);
@@ -18946,7 +19013,7 @@
             this.tabPage3.Controls.Add(this.lowerMachine_Panel1);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(483, 381);
+            this.tabPage3.Size = new System.Drawing.Size(1743, 1032);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "系統";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -19016,15 +19083,15 @@
             // 
             // plC_MindVision_Camera_UI_CCD01
             // 
-            this.plC_MindVision_Camera_UI_CCD01._00_EISutter = "F10200";
+            this.plC_MindVision_Camera_UI_CCD01._00_EISutter = "F10100";
             this.plC_MindVision_Camera_UI_CCD01._00_IsConneted = "S10050";
             this.plC_MindVision_Camera_UI_CCD01._01_Open = "S10051";
-            this.plC_MindVision_Camera_UI_CCD01._01_VGain = "F10201";
-            this.plC_MindVision_Camera_UI_CCD01._02_Sharpness = "F10202";
+            this.plC_MindVision_Camera_UI_CCD01._01_VGain = "F10101";
+            this.plC_MindVision_Camera_UI_CCD01._02_Sharpness = "F10102";
             this.plC_MindVision_Camera_UI_CCD01._10_READY = "S10052";
-            this.plC_MindVision_Camera_UI_CCD01._10_取像時間 = "F10203";
+            this.plC_MindVision_Camera_UI_CCD01._10_取像時間 = "F10103";
             this.plC_MindVision_Camera_UI_CCD01._11_TRIGGER = "S10053";
-            this.plC_MindVision_Camera_UI_CCD01._20_ActiveSurfaceHandle = "F10204";
+            this.plC_MindVision_Camera_UI_CCD01._20_ActiveSurfaceHandle = "F10104";
             this.plC_MindVision_Camera_UI_CCD01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.plC_MindVision_Camera_UI_CCD01.CameraName = "CCD00";
             this.plC_MindVision_Camera_UI_CCD01.CycleTime = 1;
@@ -19044,15 +19111,15 @@
             // 
             // plC_MindVision_Camera_UI2_CCD02
             // 
-            this.plC_MindVision_Camera_UI2_CCD02._00_EISutter = "F10300";
+            this.plC_MindVision_Camera_UI2_CCD02._00_EISutter = "F10200";
             this.plC_MindVision_Camera_UI2_CCD02._00_IsConneted = "S10060";
             this.plC_MindVision_Camera_UI2_CCD02._01_Open = "S10061";
-            this.plC_MindVision_Camera_UI2_CCD02._01_VGain = "F10301";
-            this.plC_MindVision_Camera_UI2_CCD02._02_Sharpness = "F10302";
+            this.plC_MindVision_Camera_UI2_CCD02._01_VGain = "F10201";
+            this.plC_MindVision_Camera_UI2_CCD02._02_Sharpness = "F10202";
             this.plC_MindVision_Camera_UI2_CCD02._10_READY = "S10062";
-            this.plC_MindVision_Camera_UI2_CCD02._10_取像時間 = "F10303";
+            this.plC_MindVision_Camera_UI2_CCD02._10_取像時間 = "F10203";
             this.plC_MindVision_Camera_UI2_CCD02._11_TRIGGER = "S10063";
-            this.plC_MindVision_Camera_UI2_CCD02._20_ActiveSurfaceHandle = "F10304";
+            this.plC_MindVision_Camera_UI2_CCD02._20_ActiveSurfaceHandle = "F10204";
             this.plC_MindVision_Camera_UI2_CCD02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.plC_MindVision_Camera_UI2_CCD02.CameraName = "CCD01";
             this.plC_MindVision_Camera_UI2_CCD02.CycleTime = 1;
@@ -19213,7 +19280,7 @@
             this.tabPage14.Controls.Add(this.sqL_DataGridView_PLC資料交握參數);
             this.tabPage14.Location = new System.Drawing.Point(4, 25);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Size = new System.Drawing.Size(483, 381);
+            this.tabPage14.Size = new System.Drawing.Size(1743, 1015);
             this.tabPage14.TabIndex = 5;
             this.tabPage14.Text = "交握";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -21034,7 +21101,7 @@
         private MyUI.PLC_NumBox plC_NumBox55;
         private MyUI.RJ_Lable rJ_Lable64;
         private MyUI.PLC_NumBox plC_NumBox56;
-        private MyUI.PLC_Button plC_Button6;
+        private MyUI.PLC_Button plC_Button_CCD01_01基準圓量測框;
         private MyUI.RJ_Lable rJ_Lable62;
         private MyUI.RJ_Pannel rJ_Pannel20;
         private MyUI.PLC_NumBox plC_NumBox51;

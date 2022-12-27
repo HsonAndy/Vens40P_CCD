@@ -63,11 +63,11 @@ namespace 文信40PIN_CCD
         private long CCD02_02_SrcImageHandle_拼接完成圖;
         #region PLC_CCD02_SNAP
         PLC_Device PLC_Device_CCD02_SNAP = new PLC_Device("S39801");
-        PLC_Device PLC_Device_CCD02_SNAP_電子快門 = new PLC_Device("F10120");
-        PLC_Device PLC_Device_CCD02_SNAP_視訊增益 = new PLC_Device("F10121");
-        PLC_Device PLC_Device_CCD02_SNAP_銳利度 = new PLC_Device("F10122");
-        PLC_Device PLC_Device_CCD02_SNAP_取像時間 = new PLC_Device("F10123");
-        PLC_Device PLC_Device_CCD02_SNAP_ActiveHandle = new PLC_Device("F10124");
+        PLC_Device PLC_Device_CCD02_SNAP_電子快門 = new PLC_Device("F10200");
+        PLC_Device PLC_Device_CCD02_SNAP_視訊增益 = new PLC_Device("F10201");
+        PLC_Device PLC_Device_CCD02_SNAP_銳利度 = new PLC_Device("F10202");
+        PLC_Device PLC_Device_CCD02_SNAP_取像時間 = new PLC_Device("F10203");
+        PLC_Device PLC_Device_CCD02_SNAP_ActiveHandle = new PLC_Device("F10204");
 
         int cnt_Program_CCD02_SNAP = 65534;
 
@@ -124,7 +124,7 @@ namespace 文信40PIN_CCD
             //{
             //    cnt++;
             //}
-            this.plC_MindVision_Camera_UI2_CCD02.Snap();
+            this.plC_MindVision_Camera_UI2_CCD02.SnapAndWait();
             cnt++;
         }
         void cnt_Program_CCD02_SNAP_觸發完成(ref int cnt)

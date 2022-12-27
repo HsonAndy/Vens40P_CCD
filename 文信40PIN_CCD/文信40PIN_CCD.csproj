@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{54D24B72-E613-4C3A-BB38-F78336C42F0D}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>文信40PIN_CCD</RootNamespace>
     <AssemblyName>文信40PIN_CCD</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>

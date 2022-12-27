@@ -38,9 +38,9 @@ namespace 文信40PIN_CCD
         }
 
         #region PLC_CCD01_02_SNAP_拼接圖1
-        PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖1_按鈕 = new PLC_Device("S15310");
-        PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖1 = new PLC_Device("S15305");
-        PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖1_LIVE = new PLC_Device("S15306");
+        PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖1_按鈕 = new PLC_Device("S15210");
+        PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖1 = new PLC_Device("S15205");
+        PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖1_LIVE = new PLC_Device("S15206");
         PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖1_電子快門 = new PLC_Device("F9010");
         PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖1_視訊增益 = new PLC_Device("F9011");
         PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖1_銳利度 = new PLC_Device("F9012");
@@ -124,9 +124,9 @@ namespace 文信40PIN_CCD
 
         #endregion
         #region PLC_CCD01_02_SNAP_拼接圖2
-        PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖2_按鈕 = new PLC_Device("S15330");
-        PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖2 = new PLC_Device("S15325");
-        PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖2_LIVE = new PLC_Device("S15316");
+        PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖2_按鈕 = new PLC_Device("S15230");
+        PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖2 = new PLC_Device("S15225");
+        PLC_Device PLC_Device_CCD01_02_SNAP_拼接圖2_LIVE = new PLC_Device("S15216");
 
         int cnt_Program_CCD01_02_SNAP_拼接圖2 = 65534;
         void sub_Program_CCD01_02_SNAP_拼接圖2()

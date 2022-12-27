@@ -26,7 +26,6 @@ namespace 文信40PIN_CCD
             讀寫,
             註解,
         }
-
         private void Program_PLC資料交握參數_Init()
         {
             SQLUI.SQL_DataGridView.SQL_Set_Properties(this.sqL_DataGridView_PLC資料交握參數, this.connentionClass);
@@ -43,7 +42,6 @@ namespace 文信40PIN_CCD
 
             this.plC_UI_Init1.Add_Method(Program_PLC資料交握參數);
         }
-
         private void Program_PLC資料交握參數()
         {
             sub_Program_檢查PLC資料交握參數();
@@ -116,7 +114,6 @@ namespace 文信40PIN_CCD
 
 
         #endregion
-
         #region Function
 
         #endregion

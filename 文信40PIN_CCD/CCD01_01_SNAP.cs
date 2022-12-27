@@ -124,7 +124,7 @@ namespace 文信40PIN_CCD
             //{
             //    cnt++;
             //}
-            this.plC_MindVision_Camera_UI_CCD01.Snap();
+            this.plC_MindVision_Camera_UI_CCD01.SnapAndWait();
             cnt++;
         }
         void cnt_Program_CCD01_SNAP_觸發完成(ref int cnt)
